@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Infinita</title>
+    <link rel="shortcut icon" href="/src/imagens/Logos/Fav3.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/grid-flex/index.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/menu.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/secao.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/cartao.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/navbar.css">
+    <link rel="stylesheet" href="./src/style/base.css">
+    <link rel="stylesheet" href="./src/style/responsivo.css">
+</head>
+
+<body>
+
+    <header class="cabecalho container">
+        <a href="#"><img class="cabecalho__logo" src="./src/imagens/Logos/logoPodcast.svg" alt="Logo da XP Infinita"></a>
+        <section class="secao-player">
+            <div class="player_descricao">
+                <img src="/src/imagens/Imagens/Capas/play01.png"
+                    alt="Multiverso Infinito - Episodio 35">
+                <h3>Realidades Sim...</h3>
+                <span>Multiverso Infinito</span>
+            </div>
+            <div class="player_temporizador">
+                <div class="player_temporizador-botoes">
+                    <button aria-label="Botão voltar música 10 segundos"><img
+                            src="./src/imagens/Icones/replay-10.svg"
+                            alt="Ícone voltar música 10 segundos"></button><!-- retornar 10 segundos -->
+                    <button aria-label="Botão voltar música anterior"><img
+                            src="./src/imagens/Icones/skip-previous.svg"
+                            alt="Ícone voltar música anterior"></button><!-- voltar -->
+                    <button aria-label="Play Podcast"><img
+                            src="./src/imagens/Icones/botao-play.svg"
+                            alt="Ícone de Play"></button>
+                    <button aria-label="Botão avançar próxima música"><img
+                            src="./src/imagens/Icones/skip-next.svg"
+                            alt="Ícone avançar próxima música"></button><!-- próximo -->
+                    <button aria-label="Botão avançar música 10 segundos"><img
+                            src="./src/imagens/Icones/forward-10.svg"
+                            alt="Ícone avançar música 10 segundos"></button><!-- avançar 10 segundos -->
+                </div>
+                <div class="player_temporizador-cronometro">
+                    <span>00:00</span>
+                    <div class="player_temporizador-cronometro_tempo"></div>
+                    <span>18:35</span>
+                </div>
+            </div>
+            <div class="player_volume">
+                <button aria-label="Botão diminuir volume"><img
+                        src="./src/imagens/Icones/volume-down.svg"
+                        alt="Ícone diminuir volume"></button><!-- volume-baixo -->
+                <div class="player_volume_nivel"></div> <!-- nível volume -->
+                <button aria-label="Botão aumentar volume"><img
+                        src="./src/imagens/Icones/volume-up.svg"
+                        alt="Ícone aumentar volume"></button><!-- volume-alto -->
+            </div>
+        </section>
+    </header>
+
+    <aside class="menu-lateral">
+        <a href="#" class="menu-lateral__logo"><img src="./src/imagens/Logos/logoPodcast.svg"
+                alt="Logo da XP Infinito"></a>
+        <nav>
+            <ul>
+                <li class="menu-lateral__link ativo"><button aria-label="Botão acessar home"><img
+                            src="./src/imagens/Icones/home (1).svg" alt="Logo do Home">Home</button></li>
+                <li class="menu-lateral__link"><button aria-label="Botão acessar campo de busca"><img
+                            src="./src/imagens/Icones/search-branco.svg" alt="Logo do botão de busca">Busca</button>
+                </li>
+                <li class="menu-lateral__link"><button aria-label="Botão acessar sua biblioteca"><img
+                            src="./src/imagens/Icones/bookmark-branco.svg" alt="Logo do botão sua biblioteca">Sua
+                        Biblioteca</button></li>
+            </ul>
+        </nav>
+        <h3 class="menu-lateral__playlist">PLAYLISTS</h3>
+        <ul>
+            <li class="menu-lateral__link"><button aria-label="Botão criar playlist"><img
+                        src="./src/imagens/Icones/add-box-branco.svg" alt="Logo do botão criar playlist">Criar
+                    Playlist</button></li>
+            <li class="menu-lateral__link"><button aria-label="Botão podcasts salvos"><img
+                        src="./src/imagens/Icones/stars-branco.svg" alt="Logo do botão Podcasts salvos">Podcasts
+                    salvos</button></li>
+        </ul>
+    </aside>
+
+    <main class="principal container">
+        <section class="secao secao-horizontal">
+            <h2 class="secao__titulo">Tocados recentemente</h2>
+            <ul class="secao__cartoes">
+                <li>
+                    <a class="cartao" href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Tocados recentemente/Logo_Checkpoint_gamer.png "
+                            alt="Logo CheckPoint Gamer">
+                        <h3 class="cartao__titulo">CheckPoint Gamer</h3>
+                        <div class="cartao__player"></div>
+                        <form class="cartao__botao" action="."><button aria-label="Play Podcast"><img
+                                    src="./src/imagens/Icones/botao-play.svg" alt="Ícone de Play"></button></form>
+                    </a>
+                </li>
+                <li>
+                    <a class="cartao" href="#"><img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Tocados recentemente/Logo_Level_UP_entrevistas.png"
+                            alt="logo Level UP Entrevistas">
+                        <h3 class="cartao__titulo">Level UP Entrevistas</h3>
+                        <div class="cartao__player"></div>
+                        <form class="cartao__botao" action="."><button aria-label="Play Podcast"><img
+                                    src="./src/imagens/Icones/botao-play.svg" alt="Ícone de Play"></button></form>
+                    </a>
+                </li>
+                <li>
+                    <a class="cartao" href="#">
+                        <img class="cartao__imagem" src="./src/imagens/Imagens/Capas/Tocados recentemente/Logo_multiverso_infinito.png"
+                            alt="logo Multiverso Infinito">
+                        <h3 class="cartao__titulo">Multiverso Infinito</h3>
+                        <div class="cartao__player"></div>
+                        <form class="cartao__botao" action="."><button aria-label="Play Podcast"><img
+                                    src="./src/imagens/Icones/botao-play.svg" alt="Ícone de Play"></button></form>
+                    </a>
+                </li>
+                <li>
+                    <a class="cartao" href="#">
+                        <img class="cartao__imagem" src="./src/imagens/Imagens/Capas/Tocados recentemente/Logo_pega_esse_EasterEGG.png"
+                            alt="Logo Pega esse EasterEGG">
+                        <h3 class="cartao__titulo">Pega Esse Easter EGG</h3>
+                        <div class="cartao__player"></div>
+                        <form class="cartao__botao" action="."><button aria-label="Play Podcast"><img
+                                    src="./src/imagens/Icones/botao-play.svg" alt="Ícone de Play"></button></form>
+                    </a>
+                </li>
+                <li>
+                    <a class="cartao" href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Tocados recentemente/Logo_XP_da_semana.png"
+                            alt="logo XP da Semana">
+                        <h3 class="cartao__titulo">XP da Semana</h3>
+                        <div class="cartao__player"></div>
+                        <form class="cartao__botao" action="."><button aria-label="Play Podcast"><img
+                                    src="./src/imagens/Icones/botao-play.svg" alt="Ícone de Play"></button></form>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="cartao" href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Tocados recentemente/Logo_herois_no_ar.png"
+                            alt="Logo Heróis no Ar">
+                        <h3 class="cartao__titulo">Heróis no Ar</h3>
+                        <div class="cartao__player"></div>
+                        <form class="cartao__botao" action="."><button aria-label="Play Podcast"><img
+                                    src="./src/imagens/Icones/botao-play.svg" alt="Ícone de Play"></button></form>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="secao secao-vertical">
+            <h2 class="secao__titulo">Heróis no Ar</h2>
+            <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre Heróis no Ar">Ver
+                mais</a>
+            <ul class="secao__cartoes">
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HeróisNoAr/herois_no_ar_01.png"
+                            alt="Heróis no Ar: Marvel vs DC">
+                        <h3 class="cartao__titulo">Marvel vs DC - Uma guerra de u...</h3>
+                        <h4 class="cartao__subtitulo">Heróis no Ar</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HeróisNoAr/herois_no_ar_02.png"
+                            alt="Heróis no Ar: A origem dos superherois no cinema">
+                        <h3 class="cartao__titulo">A origem dos superherois no c...</h3>
+                        <h4 class="cartao__subtitulo">Heróis no Ar</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HeróisNoAr/herois_no_ar_03.png"
+                            alt="Heróis no Ar: Heróis Brasileiros nos quadrinhos e no cinema">
+                        <h3 class="cartao__titulo">Heróis Brasileiros nos quadrin...</h3>
+                        <h4 class="cartao__subtitulo">Heróis no Ar</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HeróisNoAr/herois_no_ar_04.png"
+                            alt="Heróis no Ar: Anti-heróis: porque amamos os imperfeitos">
+                        <h3 class="cartao__titulo">Anti-heróis: porque amanamos o...</h3>
+                        <h4 class="cartao__subtitulo">Heróis no Ar</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="../src/imagens/Imagens/Capas/HeróisNoAr/herois_no_ar_05.png"
+                            alt="Heróis no Ar: Multiverso em colapso: o futuro dos crossovers">
+                        <h3 class="cartao__titulo">Multiverso em colapso: o futu...</h3>
+                        <h4 class="cartao__subtitulo">Heróis no Ar</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HeróisNoAr/herois_no_ar_06.png"
+                            alt="Heróis no Ar: Marvel, DC e a bagunça das linhas do tempo">
+                        <h3 class="cartao__titulo">Marvel, DC e a bagunça das li...</h3>
+                        <h4 class="cartao__subtitulo">Heróis no Ar</h4>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="secao secao-vertical">
+            <h2 class="secao__titulo">Indicados para você</h2>
+            <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre indicados para você">Ver
+                mais</a>
+            <ul class="secao__cartoes">
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem" src="./src/imagens/Imagens/Capas/indicados-pra-voce/indicado_01.png"
+                            alt="Realidades Simuladas: Vivemos...">
+                        <h3 class="cartao__titulo">Realidades Simuladas: Vivemos...</h3>
+                        <h4 class="cartao__subtitulo">Multiverso Infinito</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem" src="./src/imagens/Imagens/Capas/indicados-pra-voce/indicado_02.png"
+                            alt=" Pega Esse Easter Egg - Mario Bros: Referencias que voam">
+                        <h3 class="cartao__titulo">Mario Bros: Referencias que vo...</h3>
+                        <h4 class="cartao__subtitulo">Pega Esse Easter Egg</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem" src="./src/imagens/Imagens/Capas/indicados-pra-voce/indicado_03.png"
+                            alt=" Multiverso nos Games: Do Portal...">
+                        <h3 class="cartao__titulo">Multiverso nos Games: Do Portal...</h3>
+                        <h4 class="cartao__subtitulo">Multiverso Infinito</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem" src="./src/imagens/Imagens/Capas/indicados-pra-voce/indicado_04.png"
+                            alt=" Entrevista: Professor Alvaro M...">
+                        <h3 class="cartao__titulo">Entrevista: Professor Alvaro M...</h3>
+                        <h4 class="cartao__subtitulo">Level UP Entrevistas</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/indicados-pra-voce/indicado_05.png"
+                            alt=" Resumo da Semana 27 - Trailer b...">
+                        <h3 class="cartao__titulo">Resumo da Semana 27 - Trailer b...</h3>
+                        <h4 class="cartao__subtitulo">XP da Semana</h4>
+                    </a>
+                </li>
+                <li class="cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/indicados-pra-voce/indicado_06.png"
+                            alt=" GTA VI: Tudo o que sabemos ate ...">
+                        <h3 class="cartao__titulo">GTA VI: Tudo o que sabemos ate ...</h3>
+                        <h4 class="cartao__subtitulo">CheckPoint Gamer</h4>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="secao secao-vertical">
+            <h2 class="secao__titulo">Level UP Entrevistas</h2>
+            <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre Level UP Entrevistas">Ver mais</a>
+            <ul class="secao__cartoes">
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Entrevistas/Level_UP_Entrevistas_01.png"
+                            alt="Entrevista: Camila Riberio - Mu...">
+                        <h3 class="cartao__titulo">Entrevista: Camila Riberio - Mu...</h3>
+                        <h4 class="cartao__subtitulo">Level UP Entrevistas</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Entrevistas/Level_UP_Entrevistas_02.png"
+                            alt="Entrevista: Jorge Miller - O Su...">
+                        <h3 class="cartao__titulo">Entrevista: Jorge Miller - O Su...</h3>
+                        <h4 class="cartao__subtitulo">Level UP Entrevistas</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Entrevistas/Level_UP_Entrevistas_03.png"
+                            alt="Entrevista: Beto e Tonho - Os gê...">
+                        <h3 class="cartao__titulo">Entrevista: Beto e Tonho - Os gê...</h3>
+                        <h4 class="cartao__subtitulo">Level UP Entrevistas</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Entrevistas/Level_UP_Entrevistas_04.png"
+                            alt="Entrevista: Rebeca Oliver - Escr...">
+                        <h3 class="cartao__titulo">Entrevista: Rebeca Oliver - Escr...</h3>
+                        <h4 class="cartao__subtitulo">Level UP Entrevistas</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Entrevistas/Level_UP_Entrevistas_05.png"
+                            alt="Entrevista: Fred e Enzo Bezerra ...">
+                        <h3 class="cartao__titulo">Entrevista: Fred e Enzo Bezerra ...</h3>
+                        <h4 class="cartao__subtitulo">Level UP Entrevistas</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/Entrevistas/Level_UP_Entrevistas_06.png"
+                            alt="Entrevista: Prof. Álvaro Manuel ...">
+                        <h3 class="cartao__titulo">Entrevista: Prof. Álvaro Manuel ...</h3>
+                        <h4 class="cartao__subtitulo">Level UP Entrevistas</h4>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="secao secao-vertical">
+            <h2 class="secao__titulo">Hora Otaku</h2>
+            <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre Hora Otaku">Ver mais</a>
+            <ul class="secao__cartoes">
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HoraOtaku/hora_otaku_01.png"
+                            alt="Por que 'Naruto correndo' virou...">
+                        <h3 class="cartao__titulo">Por que "Naruto correndo" virou... </h3>
+                        <h4 class="cartao__subtitulo">Hora Otaku</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HoraOtaku/hora_otaku_02.png"
+                            alt="O que é o Anime da temporada?">
+                        <h3 class="cartao__titulo">O que é o Anime da temporada?</h3>
+                        <h4 class="cartao__subtitulo">Hora Otaku</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HoraOtaku/hora_otaku_03.png"
+                            alt="Top 03 aberturas mais épicas ...">
+                        <h3 class="cartao__titulo">Top 03 aberturas mais épicas ...</h3>
+                        <h4 class="cartao__subtitulo">Hora Otaku</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HoraOtaku/hora_otaku_04.png"
+                            alt="Diferença entre anime, mangá...">
+                        <h3 class="cartao__titulo">Diferença entre anime, mangá...</h3>
+                        <h4 class="cartao__subtitulo">Hora Otaku</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HoraOtaku/hora_otaku_05.png"
+                            alt="o Multiverso explicado com a...">
+                        <h3 class="cartao__titulo">O Multiverso explicado com a...</h3>
+                        <h4 class="cartao__subtitulo">Hora Otaku</h4>
+                    </a>
+                </li>
+                <li class="secao__cartao cartao">
+                    <a href="#">
+                        <img class="cartao__imagem"
+                            src="./src/imagens/Imagens/Capas/HoraOtaku/hora_otaku_06.png"
+                            alt=" o que significa Sempai, Kawaii e outros termos">
+                        <h3 class="cartao__titulo">O que significa "Sempai", "Ka...</h3>
+                        <h4 class="cartao__subtitulo">Hora Otaku</h4>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="navbar">
+        <ul class="navbar__items">
+            <li class="navbar__item navbar__item--home">
+                <form action="."><button aria-label="Botão acessar Home"><img src="./src/imagens/Icones/home-branco.svg"
+                            alt="Logo do botão acessar Home">Home</button></form>
+            </li>
+            <li class="navbar__item navbar__item--busca">
+                <form action="."><button aria-label="Botão acessar campo de busca"><img
+                            src="./src/imagens/Icones/search-branco.svg"
+                            alt="Logo do botão acessar campo de busca">Busca</button></form>
+            </li>
+            <li class="navbar__item navbar__item--biblioteca">
+                <form action="."><button aria-label="Botão acessar sua biblioteca"><img
+                            src="./src/imagens/Icones/bookmark-branco.svg"
+                            alt="Logo do botão acessar sua biblioteca">Sua Biblioteca</button></form>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
