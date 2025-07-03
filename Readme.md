@@ -16,7 +16,7 @@ Este repositório contém os projetos e atividades desenvolvidas durante o curso
 
 ## 🚀 Acesse o projeto publicado
 
-🔗 [Clique aqui para ver o projeto online](https://seu-projeto.vercel.app)
+🔗 [Clique aqui para ver o projeto online](https://xp-infinito-podcast.vercel.app/)
 
 ## 🛠️ Tecnologias utilizadas
 
